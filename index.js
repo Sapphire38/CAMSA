@@ -1,6 +1,9 @@
-let modal = document.getElementById("modal")
-modal.addEventListener('click', mostrarModal)
+let modal = document.getElementById("modal");
 
 function mostrarModal(){
     modal.style.display = "grid"
+}
+
+function cerrarModal(){
+    modal.style.display = "none"
 }

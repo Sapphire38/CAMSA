@@ -17,6 +17,10 @@ header {
     background-position: bottom;
     display: flex;
     flex-direction: column;
+    
+}
+
+body{
     overflow: hidden;
 }
 
@@ -48,7 +52,7 @@ header {
     align-items: flex-start;
     flex-direction: column;
     padding-left: 4vw;
-    padding-top: 12vh;
+    padding-top: 8vh;
 }
 
 .image-cont {
@@ -63,10 +67,10 @@ header {
 
 .icons-networks {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    gap: 10px;
+    width: 20%;
 }
 
 
@@ -78,6 +82,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 30px;
+    width: auto;
 }
 
 .line-white {
@@ -99,21 +105,37 @@ h1 {
     color: white;
     font-weight: 700;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 2.8vw;
+    font-size: 2.5vw;
 }
 
 h4 {
     color: white;
-    font-weight: 300;
-    font-size: 1.2vw;
-    margin-top: 2.5vw;
+    font-weight: 400;
+    font-size: 1vw;
+    margin-top: 1.2vw;
     line-height: 1.7vw;
+    margin-bottom: 1.2vw;
 }
 
 h4 span {
     color: #F75300;
-    font-weight: 600;
+    font-weight: 700;
     
+}
+
+.check-text{
+    color: white;
+    font-weight: 200;
+    font-size: 0.9vw;
+    line-height: 1.7vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.check-text span{
+    display: grid;
+    place-items: center;
 }
 
 .white-bold {
@@ -126,7 +148,7 @@ h4 span {
     align-items: center;
     flex-direction: row;
     gap: 15px;
-    margin-top: 2vw;
+    margin-top: 1.5vw;
 }
 
 .cont-one {
@@ -138,11 +160,11 @@ h4 span {
     overflow: hidden;
     transition: all 300ms;
     gap: 8px;
-    width: 9em;
+    width: 8vw;
     height: 3em;
     line-height: 2.5em;
     z-index: 1;
-    font-size: 17px;
+    font-size: 0.9vw;
     border-radius: 24px;
     font-weight: 400;
     color: var(--color);
@@ -154,50 +176,35 @@ h4 span {
    
 .cont-one:hover {
     background-color: white;
-    color: #000000; 
+    color: #F75300;
    }
-   
 
-   .cont-one:before {
-    top: 50%;
-    right: 120%;
-    transition: all .7s;
-   }
-   
-   .cont-one:hover:before {
-    top: -30px;
-    right: -30px;
-   }
    
 .cont-two{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
-    width: 9em;
+    width: 8vw;
     height: 3em;
     line-height: 2.5em;
-    background-color: transparent;
-    border: 1px solid #F75300;
+    background-color: #F75300;
     border-radius: 24px;
     color: white;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 2.5em;
-    font-size: 17px;
+    font-size: 0.9vw;
     transition: all 300ms ease-in-out;
 }
 
 
 .cont-two:hover{
-    border: 2px solid #F75300;
+    background-color: white;
     color: #F75300;
 }
 
-.svg-brands{
-    display: flex;
-    flex-direction: row;
-}
+
 
 .space{
     display: flex;
@@ -208,22 +215,34 @@ h4 span {
 
 h3{
     color: white;
-    font-size: 1.5vw;
-    font-weight: 500;
+    font-size: 1.2vw;
+    font-weight: 300;
 }
 
 .svg-brands {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    margin-bottom: 40px;
-    margin-top: 25px;
-    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    gap: 20px;
 }
 
 .svg-brands img, .svg-brands svg{
-    height: 2vw;
+    height: 1.8vw;
     fill: white;
+    
+}
+
+.svg-brands img:nth-child(1){
+    height: 1.6vw;
+}
+
+.svg-brands img:nth-child(2){
+    height: 1.4vw;
+}
+.svg-brands img:nth-child(4){
+    height: 2vw;
 }
 
 .column{
@@ -239,7 +258,7 @@ h3{
 
 .column img{
 
-    height: 30vw;
+    height: 28vw;
     width: auto;
     object-fit: cover;
 }
@@ -256,7 +275,7 @@ h3{
 .modal-content{
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.575);
+    background-color: rgba(54, 54, 54, 0.575);
     backdrop-filter: blur(5px);
     position: absolute;
     z-index: 100;
@@ -286,6 +305,11 @@ h3{
 .form{
     background-color: #100C38;
     height: 100%;
+}
+
+.form a {
+  color: white;
+  text-decoration: underline 1px solid;
 }
 
 .fondo{
