@@ -5,6 +5,10 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
+a{
+    cursor: pointer;
+}
+
 header {
     background-image: url(./res/Group.png);
     height: 100vh;
@@ -87,7 +91,7 @@ header {
     position: absolute;
     height: 37vmax;
     top: 12vmax;
-    right: 20vmax;
+    right: 18vmax;
     z-index: 10;
 }
 
@@ -130,35 +134,27 @@ h4 span {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 8em;
-    height: 3em;
-    line-height: 2.5em;
     position: relative;
     overflow: hidden;
-    transition: color .5s;
+    transition: all 300ms;
+    gap: 8px;
+    width: 9em;
+    height: 3em;
+    line-height: 2.5em;
     z-index: 1;
     font-size: 17px;
     border-radius: 24px;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--color);
     text-decoration: none;
-    background-color: #F75300;
+    background-color: #1BD741;
    }
    
-   
-.cont-one:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: var(--color);
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-   }
-   
+
    
 .cont-one:hover {
-    color: #F75300;
+    background-color: white;
+    color: #000000; 
    }
    
 
@@ -177,7 +173,8 @@ h4 span {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 8em;
+    gap: 8px;
+    width: 9em;
     height: 3em;
     line-height: 2.5em;
     background-color: transparent;
@@ -256,7 +253,46 @@ h3{
     animation: moveTaB 15s ease-in-out infinite;
 }
 
+.modal-content{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.575);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    z-index: 100;
+    display: none;
+    place-items: center;
 
+}
+
+@keyframes fade {
+    
+}
+
+
+.popUp{
+    position: fixed;
+    height: 80vh;
+    width: 60vw;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+}
+
+.form, .fondo{
+    width: 50%;
+}
+
+.form{
+    background-color: #100C38;
+    height: 100%;
+}
+
+.fondo{
+    height: 100%;
+    background-image: url(./res/fondo\ form.svg);
+    background-size: cover;
+}
 
 @keyframes moveTaB {
     0%{
