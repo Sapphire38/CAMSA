@@ -7,3 +7,5 @@ function mostrarModal(){
 function cerrarModal(){
     modal.style.display = "none"
 }
+
+
