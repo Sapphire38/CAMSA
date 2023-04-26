@@ -56,7 +56,7 @@ body{
     align-items: flex-start;
     flex-direction: column;
     padding-left: 4vw;
-    padding-top: 8vh;
+    padding-top: 3vw;
 }
 
 .image-cont {
@@ -98,19 +98,40 @@ body{
     width: 5px;
 }
 
+.line-type{
+    width: 5px;
+    padding-left: 5px;
+    border-right: 3px solid white;
+    animation: fade ease 1s infinite;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
 .svg-lines {
     position: absolute;
     height: 37vmax;
-    top: 12vmax;
-    right: 18vmax;
+    top: 9vmax;
+    right: 23vmax;
     z-index: 10;
 }
 
 h1 {
     color: white;
-    font-weight: 700;
+    font-weight: 500;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 2.5vw;
+    padding-right: 20%;
+    height: 6vw;
 }
 
 h4 {
@@ -291,7 +312,23 @@ h3{
 
 .typewriter{
     width: 80%;
+    padding-top: 5px;
 }
+
+.typewriter2{
+    width: 80%;
+    padding-top: 5px;
+}
+
+.typewriter2 h1{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid rgb(255, 255, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 3.5s steps(40, end) infinite,
+      blink-caret .75s ease-in-out infinite;
+  }
 
 .typewriter h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -306,7 +343,8 @@ h3{
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 100%;
+        border-color: rgba(255, 255, 255, 0); }
   }
   
   /* The typewriter cursor effect */
@@ -373,6 +411,7 @@ h3{
     display: none;
 }
 
+
 @media (max-width: 768px) {
 
     .no-screen{
@@ -404,19 +443,24 @@ h3{
         align-items: flex-end;
     }
 
+ 
+
     .no-phone{
         display: none;
     }
     
    
     .icon-camsa{
-        height: 11vw;
+        height: 12vw;
     }
 
 
     h1 {
         font-size: 8vw;
         margin-top:1vw;
+        padding-right: 0;
+        position: relative;
+        height: 23vw;
     }
 
     h4 {
