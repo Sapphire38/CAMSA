@@ -12,7 +12,7 @@ a{
 header {
     background-image: url(./res/Group.png);
     height: 100vh;
-    background-repeat: none;
+
     background-size: cover;
     background-position: bottom;
     display: flex;
@@ -34,6 +34,10 @@ body{
     padding-left: 3vw;
     padding-right: 3vw;
     height: 100px;
+}
+
+.icon-camsa{
+    height: 3vw;
 }
 
 .content {
@@ -84,6 +88,7 @@ body{
     align-items: center;
     height: 30px;
     width: auto;
+    text-decoration: underline 1px solid white;
 }
 
 .line-white {
@@ -342,11 +347,133 @@ h3{
     }
 }
 
+.no-screen{
+    display: none;
+}
 
 @media (max-width: 768px) {
 
+    .no-screen{
+        display: flex;
+    }
+
     .text-cont{
         width: 100%;
+        margin: 0;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 0vw;
+    }
+
+    body{
+        overflow-y: scroll;
+    }
+
+
+    header{
+       height: auto;
+       background-image: url(./res/Backgound\ Polygon\ Luminary\ \(768x1024\)\ -\ Tablet.png);
+       background-color: black;
+    }
+
+    .nav {
+        padding-top: 0px;
+        height: 18vw;
+        align-items: flex-end;
+    }
+
+    .no-phone{
+        display: none;
     }
     
+   
+    .icon-camsa{
+        height: 11vw;
+    }
+
+
+    h1 {
+        font-size: 8vw;
+        margin-top:1vw;
+    }
+
+    h4 {
+     
+        font-size: 3.8vw;
+        margin-top: 4vw;
+        line-height: 5vw;
+        margin-bottom: 4vw;
+    }
+
+
+    .check-text{
+        font-size: 3vw;
+    }
+
+
+    .cont-two{
+        gap: 8px;
+        width: 30vw;
+        height: 10vw;
+        line-height: 2.5em;
+        font-size: 3vw;
+    }
+
+    .cont-one{
+        gap: 8px;
+        width: 30vw;
+        height: 10vw;
+        line-height: 2.5em;
+        font-size: 3vw;
+    }
+
+
+    .cont-btns{
+        margin-top: 5vw;
+    }
+
+    .space{
+        justify-content: flex-start;
+        gap: 12vw;
+        margin-top: 10vw;
+    }
+
+    h3{
+        margin-top: 0vw;
+        font-size: 4vw; 
+    }
+
+    .svg-brands{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .svg-brands img:nth-child(1){
+        height: 6vw;
+    }
+    
+    .svg-brands img:nth-child(2){
+        height: 5vw;
+    }
+
+    .svg-brands img:nth-child(3){
+        height: 8vw;
+        fill: white;
+        transform: translateY(3px);
+    }
+    .svg-brands img:nth-child(4){
+        height: 8vw;
+    }
+
+    .icons-networks{
+        width: 100%;
+        padding-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    .icons-networks a{
+        font-size: 4vw;
+    }
 }
