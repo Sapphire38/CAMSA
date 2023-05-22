@@ -10,7 +10,7 @@ a{
 }
 
 header {
-    background-image: url(./res/Group.png);
+    background-image: url(./res/Group.webp);
     height: 100vh;
 
     background-size: cover;
@@ -25,7 +25,7 @@ body{
 }
 
 .nav {
-    padding-top: 20px;
+    padding-top: 0.2vw;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -50,7 +50,7 @@ body{
 
 .text-cont {
     height: 100%;
-    width: 35%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -61,7 +61,7 @@ body{
 
 .image-cont {
     height: 100%;
-    width: 65%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -129,7 +129,7 @@ h1 {
     color: white;
     font-weight: 500;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     padding-right: 20%;
     height: 6vw;
 }
@@ -174,7 +174,7 @@ h4 span {
     align-items: center;
     flex-direction: row;
     gap: 15px;
-    margin-top: 1.5vw;
+    margin-top: 1.2vh;
 }
 
 .cont-one {
@@ -186,8 +186,8 @@ h4 span {
     overflow: hidden;
     transition: all 300ms;
     gap: 8px;
-    width: 8vw;
-    height: 3em;
+    width: 7vw;
+    height: 5vh;
     line-height: 2.5em;
     z-index: 1;
     font-size: 0.9vw;
@@ -211,8 +211,8 @@ h4 span {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    width: 8vw;
-    height: 3em;
+    width: 7vw;
+    height: 5vh;
     line-height: 2.5em;
     background-color: #F75300;
     border-radius: 24px;
@@ -284,7 +284,7 @@ h3{
 
 .column img{
 
-    height: 28vw;
+    height: 23vw;
     width: auto;
     object-fit: cover;
 }
@@ -388,7 +388,7 @@ h3{
         transform: translateY(0);
     }
     50%{
-        transform: translateY(150px);
+        transform: translateY(120px);
     }
     100%{
         transform: translateY(0);
@@ -400,7 +400,7 @@ h3{
         transform: translateY(0);
     }
     50%{
-        transform: translateY(-100px);
+        transform: translateY(-120px);
     }
     100%{
         transform: translateY(0);
@@ -410,6 +410,15 @@ h3{
 .no-screen{
     display: none;
 }
+
+@media (max-width: 1400px) {
+
+    .text-cont{
+        padding-top: 1vw;
+    }
+
+}
+
 
 
 @media (max-width: 768px) {
